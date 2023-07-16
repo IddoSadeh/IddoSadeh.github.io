@@ -2,138 +2,274 @@
 <html>
 
 <head>
-  <title>Iddo's Website</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Iddo's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Montserrat", sans-serif
-    }
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
 
-    .w3-row-padding img {
-      margin-bottom: 12px
-    }
 
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-      width: 120px;
-      background: #222;
-    }
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
 
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {
-      margin-left: 120px
-    }
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
 
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
-      #main {
-        margin-left: 0
-      }
-    }
-  </style>
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+
+        div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#more {display: none;}
+    </style>
 </head>
 
 <body class="w3-white">
 
 
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-white">
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">
-      <i class="fa fa-home w3-large"></i>
-      <p>HOME</p>
-    </a>
-    <a href="projects.html" class="w3-bar-item w3-button w3-padding-large w3-white">
-      <i class="fa fa-gears w3-large"></i>
-      <p>PROJECTS</p>
-    </a>
-    <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-white">
-      <i class="fa fa-briefcase w3-large"></i>
-      <p>RESUME</p>
-    </a>
-    <a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-white">
-      <i class="fa fa-newspaper w3-large"></i>
-      <p>BLOG</p>
-    </a>
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-white">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+            <i class="fa fa-home w3-large"></i>
+            <p>HOME</p>
+        </a>
+        <a href="projects.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+            <i class="fa fa-gears w3-large"></i>
+            <p>PROJECTS</p>
+        </a>
+        <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+            <i class="fa fa-briefcase w3-large"></i>
+            <p>RESUME</p>
+        </a>
+        <a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+            <i class="fa fa-newspaper w3-large"></i>
+            <p>BLOG</p>
+        </a>
 
-    <a href="https://github.com/IddoSadeh" class="w3-bar-item w3-button w3-padding-large w3-white" target="_blank">
-      <i class="fa fa-github w3-hover-opacity w3-large "></i>
-      <p>GitHub</p>
-    </a>
-    <a href="https://www.linkedin.com/in/iddo-s-092174166/" class="w3-bar-item w3-button w3-padding-large w3-white"
-      target="_blank">
-      <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
-      <p>LinkedIn</p>
-    </a>
-    <a href="mailto:iddosadeh@gmail.com" class="w3-bar-item w3-button w3-padding-large w3-white">
-      <i class="fa fa-envelope w3-hover-opacity w3-large"></i>
-      <p>EMAIL ME</p>
-    </a>
+        <a href="https://github.com/IddoSadeh" class="w3-bar-item w3-button w3-padding-large w3-white" target="_blank">
+            <i class="fa fa-github w3-hover-opacity w3-large "></i>
+            <p>GitHub</p>
+        </a>
+        <a href="https://www.linkedin.com/in/iddo-s-092174166/" class="w3-bar-item w3-button w3-padding-large w3-white"
+            target="_blank">
+            <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+            <p>LinkedIn</p>
+        </a>
+        <a href="mailto:iddosadeh@gmail.com" class="w3-bar-item w3-button w3-padding-large w3-white">
+            <i class="fa fa-envelope w3-hover-opacity w3-large"></i>
+            <p>EMAIL ME</p>
+        </a>
 
 
+        </div>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+
+
+        <div class="w3-bar w3-white  w3-center w3-small">
+
+            <a href="index.html" class="w3-bar-item w3-button" style="width:14.2857% !important">
+                <i class="fa fa-home w3-xlarge"></i>
+                <p style="font-size: 0.55em">HOME</p>
+            </a>
+            <a href="projects.html" class="w3-bar-item w3-button" style="width:14.2857% !important">
+                <i class="fa fa-gears w3-xlarge"></i>
+                <p style="font-size: 0.55em">PROJECTS</p>
+            </a>
+            <a href="resume.html" class="w3-bar-item w3-button" style="width:14.2857% !important">
+                <i class="fa fa-briefcase w3-xlarge"></i>
+                <p style="font-size: 0.55em">RESUME</p>
+            </a>
+            <a href="blog.html" class="w3-bar-item w3-button" style="width:14.2857% !important">
+                <i class="fa fa-newspaper w3-xlarge"></i>
+                <p style="font-size: 0.55em">BLOG</p>
+            </a>
+
+            <a href="https://github.com/IddoSadeh" class="w3-bar-item w3-button" style="width:14.2857% !important"
+                target="_blank">
+                <i class="fa fa-github w3-xlarge"></i>
+                <p style="font-size: 0.55em">GitHub</p>
+            </a>
+            <a href="https://www.linkedin.com/in/iddo-s-092174166/" class="w3-bar-item w3-button"
+                style="width:14.2857% !important" target="_blank">
+                <i class="fa fa-linkedin w3-xlarge "></i>
+                <p style="font-size: 0.55em">LinkedIn</p>
+            </a>
+            <a href="mailto:iddosadeh@gmail.com" class="w3-bar-item w3-button" style="width:14.2857% !important">
+                <i class="fa fa-envelope w3-xlarge"></i>
+                <p style="font-size: 0.55em">EMAIL ME</p>
+            </a>
+        </div>
     </div>
-  </nav>
 
-  <!-- Navbar on small screens (Hidden on medium and large screens) -->
-  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <!-- Page Content -->
 
-    
-    <div class="w3-bar w3-white  w3-center w3-small">
+    <div class="w3-padding-large" id="main">
 
-      <a href="index.html" class="w3-bar-item w3-button"  style="width:14.2857% !important">
-        <i class="fa fa-home w3-xlarge"></i>
-        <p style="font-size: 0.55em">HOME</p>
-      </a>
-      <a href="projects.html" class="w3-bar-item w3-button"  style="width:14.2857% !important">
-        <i class="fa fa-gears w3-xlarge"></i>
-        <p style="font-size: 0.55em">PROJECTS</p>
-      </a>
-      <a href="resume.html" class="w3-bar-item w3-button"  style="width:14.2857% !important">
-        <i class="fa fa-briefcase w3-xlarge"></i>
-        <p style="font-size: 0.55em">RESUME</p>
-      </a>
-      <a href="blog.html" class="w3-bar-item w3-button"  style="width:14.2857% !important">
-        <i class="fa fa-newspaper w3-xlarge"></i>
-        <p style="font-size: 0.55em">BLOG</p>
-      </a>
-  
-      <a href="https://github.com/IddoSadeh" class="w3-bar-item w3-button"  style="width:14.2857% !important" target="_blank">
-        <i class="fa fa-github w3-xlarge"></i>
-        <p style="font-size: 0.55em">GitHub</p>
-      </a>
-      <a href="https://www.linkedin.com/in/iddo-s-092174166/" class="w3-bar-item w3-button"  style="width:14.2857% !important"
-        target="_blank">
-        <i class="fa fa-linkedin w3-xlarge "></i>
-        <p style="font-size: 0.55em">LinkedIn</p>
-      </a>
-      <a href="mailto:iddosadeh@gmail.com" class="w3-bar-item w3-button"  style="width:14.2857% !important">
-        <i class="fa fa-envelope w3-xlarge"></i>
-        <p style="font-size: 0.55em">EMAIL ME</p>
-      </a>
+
+
+        <div class="w3-content w3-justify w3-text-black" id="Projects">
+            <h2 class="w3-text-light-black">Projects</h2>
+            <hr style="width:200px">
+            <div class="w3-padding-16">
+                <div
+                    class="w3-text-light-black C  Python  Plotly  HTML  JavaScript  CSS  Engineering  Medical  Electrical  Microcontroller 2023 ">
+                    <b>Improving Adherance to Medical Treatments - BMEG 357</b></div><div class="w3-text-gray">Jan 2023 - Apr 2023</div>
+                <div class="w3-text-gray"><b>Skills: </b> C, Python, Plotly, HTML, JavaScript, CSS, Engineering, Medical
+                    Engineering, Electrical Engineering, Microcontroller</div>
+                    
+                <p>This project was presented by Dr. Andrew Thamboo at St. Paul’s Sinus Centre in British Columbia
+                    during my studies, and focused on addressing patient noncompliance with post-operative treatment for
+                    chronic sinus disease.</p>
+                <p>The final design concept involved both hardware and software components. The hardware included a
+                    button attached to the sinus rinse bottle, soldered onto a microcontroller.
+                    This board communicated via Bluetooth with the users' phones, enabling data logging, encryption, and
+                    trend visualization on an app and web based dashboard.</p> <span id="dots"></span><span id="more">
+                <p>The logged data was stored in a central database, allowing the app to provide reminders and positive
+                    reinforcement to encourage adherence. The data also enabled the creation of a dashboard for
+                    facilitating data visualization and analysis for doctors, allowing them to search and interpret
+                    patient data with ease, and ultimately develop personalized treatments.
+                </p>
+                <p>
+                    This project was a cooperative team effort. I was incharge of the circuitry, communication between different components of the
+                    design, building the central database, populating the database with data for testing, and the doctors
+                    dashboard.</p>
+                <p>
+                    Solidworks was employed for 3D printing and prototyping the hardware casing. The hardware
+                    system included a microcontroller circuitry based on an Adafruit HUZZAH32 – ESP32 Feather Board. The
+                    code for controlling the microcontroller was written in C. On
+                    the software side, the patient user interface application was
+                    built using React.js, incorporating HTML, CSS, and JavaScript. The doctors dashboard was created
+                    using Plotly Dash. The data storage relied on google cloud services. The scripts to create data and
+                    populate the database were written in Python.
+                </p> </span> <button onclick="myFunction()" id="myBtn">Read more</button>
+                <p><b>Project Gallery:</b></p>
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="images/Nasal/bottle.png">
+                        <img src="images/Nasal/bottle.png" alt="Bottle" >
+                      </a>
+                      <div class="desc">The nasal bottle with the soldered circuitry and button</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="images/Nasal/dashboard.png">
+                        <img src="images/Nasal/dashboard.png" alt="Dashboard" >
+                      </a>
+                      <div class="desc">A snapshot of the doctors dashboard</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="images/Nasal/app.png">
+                        <img src="images/Nasal/app.png" alt="App">
+                      </a>
+                      <div class="desc">The Patient App UI</div>
+                    </div>
+                  </div>
+                  
+
+            </div>
+
+
+            <!-- END PAGE CONTENT -->
+        </div>
     </div>
-  </div>
 
-  <!-- Page Content -->
+<script>
 
-  <div class="w3-padding-large" id="main">
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-  
-
-    <!-- END PAGE CONTENT -->
-  </div>
-
-
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
 </body>
 
 </html>
