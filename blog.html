@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Iddo's Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+  </style>
+</head>
+
+<body class="w3-white">
+
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-white">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+      <i class="fa fa-home w3-large"></i>
+      <p>HOME</p>
+    </a>
+    <a href="projects.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+      <i class="fa fa-gears w3-large"></i>
+      <p>PROJECTS</p>
+    </a>
+    <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+      <i class="fa fa-briefcase w3-large"></i>
+      <p>RESUME</p>
+    </a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+      <i class="fa fa-newspaper w3-large"></i>
+      <p>BLOG</p>
+    </a>
+
+    <a href="https://github.com/IddoSadeh" class="w3-bar-item w3-button w3-padding-large w3-white" target="_blank">
+      <i class="fa fa-github w3-hover-opacity w3-large "></i>
+      <p>GitHub</p>
+    </a>
+    <a href="https://www.linkedin.com/in/iddo-s-092174166/" class="w3-bar-item w3-button w3-padding-large w3-white"
+      target="_blank">
+      <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      <p>LinkedIn</p>
+    </a>
+    <a href="mailto:iddosadeh@gmail.com" class="w3-bar-item w3-button w3-padding-large w3-white">
+      <i class="fa fa-envelope w3-hover-opacity w3-large"></i>
+      <p>EMAIL ME</p>
+    </a>
+
+
+    </div>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+
+    
+    <div class="w3-bar w3-white  w3-center w3-small">
+
+      <a href="index.html" class="w3-bar-item w3-button"  style="width:14.2857% !important">
+        <i class="fa fa-home w3-xlarge"></i>
+        <p style="font-size: 0.55em">HOME</p>
+      </a>
+      <a href="projects.html" class="w3-bar-item w3-button"  style="width:14.2857% !important">
+        <i class="fa fa-gears w3-xlarge"></i>
+        <p style="font-size: 0.55em">PROJECTS</p>
+      </a>
+      <a href="resume.html" class="w3-bar-item w3-button"  style="width:14.2857% !important">
+        <i class="fa fa-briefcase w3-xlarge"></i>
+        <p style="font-size: 0.55em">RESUME</p>
+      </a>
+      <a href="blog.html" class="w3-bar-item w3-button"  style="width:14.2857% !important">
+        <i class="fa fa-newspaper w3-xlarge"></i>
+        <p style="font-size: 0.55em">BLOG</p>
+      </a>
+  
+      <a href="https://github.com/IddoSadeh" class="w3-bar-item w3-button"  style="width:14.2857% !important" target="_blank">
+        <i class="fa fa-github w3-xlarge"></i>
+        <p style="font-size: 0.55em">GitHub</p>
+      </a>
+      <a href="https://www.linkedin.com/in/iddo-s-092174166/" class="w3-bar-item w3-button"  style="width:14.2857% !important"
+        target="_blank">
+        <i class="fa fa-linkedin w3-xlarge "></i>
+        <p style="font-size: 0.55em">LinkedIn</p>
+      </a>
+      <a href="mailto:iddosadeh@gmail.com" class="w3-bar-item w3-button"  style="width:14.2857% !important">
+        <i class="fa fa-envelope w3-xlarge"></i>
+        <p style="font-size: 0.55em">EMAIL ME</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+
+  <div class="w3-padding-large" id="main">
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-black w3-padding-64" id="welcome">
+      <h2 class="w3-text-light-black">welcome</h2>
+      <hr style="width:200px">
+      <p>Hello! My name is Iddo Sadeh, I am in my final stride of my BASc in Biomedical Engineering at UBC. I am also a
+        programming teacher. <br><br>
+        This website doubles as my engineering portfolio and blog. You'll be able to find most of my work here, but feel
+        free to visit to also visit my <a href="https://www.linkedin.com/in/iddo-s-092174166/"
+          target="_blank">LinkedIn</a> or <a href="https://github.com/IddoSadeh" target="_blank">GitHub</a>. You can
+        also contact me at <a href="mailto:iddosadeh@gmail.com">iddosadeh@gmail.com</a> if you have
+        any questions.
+
+      </p>
+
+      <div class="w3-content w3-justify w3-text-black" id="about"></div>
+      <h2 class="w3-text-light-black">about me</h2>
+      <hr style="width:200px">
+      <p>
+        I am fluent in both Hebrew and English. I enjoy reading, writing and learning. I love soccer in all its forms
+        and spend my free time doing anything that'll make me break a sweat. <br><br>
+        My learning journey is not strictly in the realms of engineering. Ill try and write about the cool stuff I learn
+        in my <a href="blog.html">blog</a>.
+      </p>
+
+      <div class="w3-content w3-justify w3-text-black" id="me"></div>
+      <h2 class="w3-text-light-black">me as an engineer</h2>
+      <hr style="width:200px">
+      I chose to study Biomedical engineering due to its interdisciplinary nature. I enjoy the oppurtuntity to learn a
+      mix of ideas and subjects and believe this will always be part of my journey. <br><br>
+      Through my studies I have learned the fundamentals of biology, chemistry, physics, math, statistics, computer
+      science, and different engineering fields (electrical, computer, mechanical, etc). However, my emphasis has been
+      to specialize in bioinformatics, data science, ML, and AI. This has has led me to supplement my core curriculum
+      with extra computer science courses.<br><br>
+      Through my work as a tutor, and my recent experience working for the department of earth and ocean science through
+      UBC's worklearn program, I have gained a working profiency with JAVA, C++, PYTHON, MATLAB, Git, and much more.
+      Feel free to explore my projects page and see all the different technologies and skills i have been using
+      throughout my journey.
+
+
+
+      <div class="w3-content w3-justify w3-text-black" id="Workingon"></div>
+      <h2 class="w3-text-light-black">what i'm currently working on</h2>
+      <hr style="width:200px">
+      <p>
+      <ul>
+        <li>
+          This website
+        </li>
+        <li>
+          My teaching website
+        </li>
+        <li>
+          Building my AP CSA java course
+        </li>
+        <li>
+          Building my C++ course
+        </li>
+      </ul>
+      </p>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+
+</body>
+
+</html>
