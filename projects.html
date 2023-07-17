@@ -45,53 +45,55 @@
         }
 
         div.gallery {
-  border: 1px solid #ccc;
-}
+            border: 1px solid #ccc;
+        }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
 
-* {
-  box-sizing: border-box;
-}
+        * {
+            box-sizing: border-box;
+        }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
 
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-#more {display: none;}
+        #more {
+            display: none;
+        }
     </style>
 </head>
 
@@ -184,66 +186,151 @@ div.desc {
         <div class="w3-content w3-justify w3-text-black" id="Projects">
             <h2 class="w3-text-light-black">Projects</h2>
             <hr style="width:200px">
-            <div class="w3-padding-16">
-                <div
-                    class="w3-text-light-black C  Python  Plotly  HTML  JavaScript  CSS  Engineering  Medical  Electrical  Microcontroller 2023 ">
-                    <b>Improving Adherance to Medical Treatments - BMEG 357</b></div><div class="w3-text-gray">Jan 2023 - Apr 2023</div>
+
+            <div
+                class="w3-padding-16 C  Python  Plotly  HTML  JavaScript  CSS  Engineering  Medical  Electrical  Microcontroller 2023 School">
+                <div class="w3-text-light-black ">
+                    <b>Improving Adherance to Medical Treatments - BMEG 357</b>
+                </div>
+                <div class="w3-text-gray">Jan 2023 - Apr 2023</div>
                 <div class="w3-text-gray"><b>Skills: </b> C, Python, Plotly, HTML, JavaScript, CSS, Engineering, Medical
                     Engineering, Electrical Engineering, Microcontroller</div>
-                    
+
                 <p>This project was presented by Dr. Andrew Thamboo at St. Paul’s Sinus Centre in British Columbia
                     during my studies, and focused on addressing patient noncompliance with post-operative treatment for
                     chronic sinus disease.</p>
                 <p>The final design concept involved both hardware and software components. The hardware included a
                     button attached to the sinus rinse bottle, soldered onto a microcontroller.
                     This board communicated via Bluetooth with the users' phones, enabling data logging, encryption, and
-                    trend visualization on an app and web based dashboard.</p> <span id="dots"></span><span id="more">
-                <p>The logged data was stored in a central database, allowing the app to provide reminders and positive
-                    reinforcement to encourage adherence. The data also enabled the creation of a dashboard for
-                    facilitating data visualization and analysis for doctors, allowing them to search and interpret
-                    patient data with ease, and ultimately develop personalized treatments.
-                </p>
-                <p>
-                    This project was a cooperative team effort. I was incharge of the circuitry, communication between different components of the
-                    design, building the central database, populating the database with data for testing, and the doctors
-                    dashboard.</p>
-                <p>
-                    Solidworks was employed for 3D printing and prototyping the hardware casing. The hardware
-                    system included a microcontroller circuitry based on an Adafruit HUZZAH32 – ESP32 Feather Board. The
-                    code for controlling the microcontroller was written in C. On
-                    the software side, the patient user interface application was
-                    built using React.js, incorporating HTML, CSS, and JavaScript. The doctors dashboard was created
-                    using Plotly Dash. The data storage relied on google cloud services. The scripts to create data and
-                    populate the database were written in Python.
-                </p> </span> <button onclick="myFunction()" id="myBtn">Read more</button>
+                    trend visualization on an app and web based dashboard.</p> <span id="dots1"></span><span id="more1" style="display: none;">
+                    <p>The logged data was stored in a central database, allowing the app to provide reminders and
+                        positive
+                        reinforcement to encourage adherence. The data also enabled the creation of a dashboard for
+                        facilitating data visualization and analysis for doctors, allowing them to search and interpret
+                        patient data with ease, and ultimately develop personalized treatments.
+                    </p>
+                    <p>
+                        This project was a cooperative team effort. I was incharge of the circuitry, communication
+                        between different components of the
+                        design, building the central database, populating the database with data for testing, and the
+                        doctors
+                        dashboard.</p>
+                    <p>
+                        Solidworks was employed for 3D printing and prototyping the hardware casing. The hardware
+                        system included a microcontroller circuitry based on an Adafruit HUZZAH32 – ESP32 Feather Board.
+                        The
+                        code for controlling the microcontroller was written in C. On
+                        the software side, the patient user interface application was
+                        built using React.js, incorporating HTML, CSS, and JavaScript. The doctors dashboard was created
+                        using Plotly Dash. The data storage relied on google cloud services. The scripts to create data
+                        and
+                        populate the database were written in Python.
+                    </p>
+                </span> <button onclick=" readmore(1)" id="myBtn1">Read more</button>
                 <p><b>Project Gallery:</b></p>
                 <div class="responsive">
                     <div class="gallery">
-                      <a target="_blank" href="images/Nasal/bottle.png">
-                        <img src="images/Nasal/bottle.png" alt="Bottle" >
-                      </a>
-                      <div class="desc">The nasal bottle with the soldered circuitry and button</div>
+                        <a target="_blank" href="images/Nasal/bottle.png">
+                            <img src="images/Nasal/bottle.png" alt="Bottle">
+                        </a>
+                        <div class="desc">The nasal bottle with the soldered circuitry and button</div>
                     </div>
-                  </div>
-                  
-                  <div class="responsive">
+                </div>
+
+                <div class="responsive">
                     <div class="gallery">
-                      <a target="_blank" href="images/Nasal/dashboard.png">
-                        <img src="images/Nasal/dashboard.png" alt="Dashboard" >
-                      </a>
-                      <div class="desc">A snapshot of the doctors dashboard</div>
+                        <a target="_blank" href="images/Nasal/dashboard.png">
+                            <img src="images/Nasal/dashboard.png" alt="Dashboard">
+                        </a>
+                        <div class="desc">A snapshot of the doctors dashboard</div>
                     </div>
-                  </div>
-                  
-                  <div class="responsive">
+                </div>
+
+                <div class="responsive">
                     <div class="gallery">
-                      <a target="_blank" href="images/Nasal/app.png">
-                        <img src="images/Nasal/app.png" alt="App">
-                      </a>
-                      <div class="desc">The Patient App UI</div>
+                        <a target="_blank" href="images/Nasal/app.png">
+                            <img src="images/Nasal/app.png" alt="App">
+                        </a>
+                        <div class="desc">The Patient App UI</div>
                     </div>
-                  </div>
-                  
+                </div>
+
+
+            </div>
+
+
+            <div class="w3-padding-16 R Data Science Machine Learning Bioinformatcs Medical
+            Engineering Electrical Engineering School" style="clear: left;">
+                <div class="w3-text-light-black ">
+                    <b>The Cancer Genome Atlas and bladder urothelial carcinoma - BMEG 310</b>
+                </div>
+                <div class="w3-text-gray">Sep 2022 - Dec 2022</div>
+                <div class="w3-text-gray"><b>Skills: </b> R, Data Science, Machine Learning, Bioinformatcs, Medical
+                    Engineering, Electrical Engineering</div>
+                <p>This project was presented in my introduction to bioinformatics course at university. Various
+                    bioinformatics methods were employed to identify biological trends and potential relationships
+                    between gene expressions, mutations, and patient demographics. The study utilized the Cancer Genome
+                    Atlas (TCGA) dataset for bladder cancer, examining 431 patients. </p>
+                <p>Through differential expression and pathway analyses, significant insights into gene expressions and
+                    mutations were obtained, leading to the identification of potential diagnostic markers and
+                    biological pathways relevant to the disease. The project's findings provide a strong foundation for
+                    understanding bladder cancer.
+                </p>
+                <span id="dots2"></span><span id="more2" style="display: none;">
+                    <p> Differential expression (DE) analysis was performed using the DESeq2 package in R to identify
+                        genes
+                        with the highest variability between different patient classes. The data was prefiltered to
+                        reduce
+                        noise and improve computational efficiency. K-means clustering was then applied to classify the
+                        patients into four distinct clusters, and a subsequent heatmap analysis allowed for the
+                        identification of six gene clusters.</p>
+
+                    <p> Pathway analysis was carried out on two patient clusters of interest using KEGG pathways and the
+                        R
+                        GAGE package. A total of 213 relevant pathways were found for these clusters, and the top 10
+                        upregulated and downregulated pathways were further evaluated. Additionally, clinical data
+                        analysis
+                        and mutation data analysis were conducted to identify trends related to patient survival, tumor
+                        status, and mutation characteristics.</p>
+
+                    <p> The project successfully established a relationship between the hsa0420 pathway and
+                        deletions in Chromosome 9, indicative of bladder urothelial carcinoma. The comprehensive
+                        analysis of
+                        gene expressions, mutations, and clinical data provided valuable insights into the disease
+                        patterns
+                        and potential diagnostic markers. The research project contributes to precision diagnostics for
+                        bladder cancer patients and lays the groundwork for further investigations into other biological
+                        applications and cancer types.</p>
+                
+                </span><button onclick="readmore(2)" id="myBtn2">Read more</button>
+
+                <p><b>Project Gallery:</b></p>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="images\bioinfo\heatmap.png">
+                            <img src="images\bioinfo\heatmap.png" alt="heat">
+                        </a>
+                        <div class="desc">Heatmap of the four patient clusters against six gene clusters.</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="images\bioinfo\kaplan.png">
+                            <img src="images\bioinfo\kaplan.png" alt="kaplan">
+                        </a>
+                        <div class="desc">A Kaplan-Meir plot of the survival probability of all patients per cluster, and tabulated results of the number of patients alive in increments of 40 months.</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="images\bioinfo\path.png">
+                            <img src="images\bioinfo\path.png" alt="kaplan">
+                        </a>
+                        <div class="desc">KEGG pathway map of the Calcium Signaling pathway. </div>
+                    </div>
+                </div>
+
+
 
             </div>
 
@@ -252,24 +339,24 @@ div.desc {
         </div>
     </div>
 
-<script>
+    <script>
 
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+        function readmore(num) {
+            var dots = document.getElementById("dots"+num);
+            var moreText = document.getElementById("more"+num);
+            var btnText = document.getElementById("myBtn"+num);
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-</script>
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 </body>
 
 </html>
