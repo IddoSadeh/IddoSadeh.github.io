@@ -30,7 +30,13 @@
             width: 120px;
             background: #222;
         }
+        .ubc-large {
+            display:inline-block;
+        }
 
+        .ubc-small {
+            display:none;
+        }
         /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
         #main {
             margin-left: 120px
@@ -41,6 +47,13 @@
             #main {
                 margin-left: 0
             }
+            .ubc-large {
+            display:none;
+        }
+
+        .ubc-small {
+            display:inline-block;
+        }
         }
     </style>
 </head>
@@ -135,7 +148,8 @@
             <hr style="width:200px">
             <div class="w3-padding-16">
                 <div style="display: flex; justify-content: space-between;">
-                    <div class="w3-text-light-black"><b>The University of British Columbia</b></div>
+                    <div class="w3-text-light-black ubc-large" ><b>The University of British Columbia</b></div>
+                    <div class="w3-text-light-black ubc-small" ><b>UBC</b></div>
                     <div class="w3-text-grey">2021 — 2025</div>
                 </div>
                 <div class="w3-text-grey"><i>BASc in Biomedical Engineering</i></div>
