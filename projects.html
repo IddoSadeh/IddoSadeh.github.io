@@ -202,7 +202,8 @@
                 <p>The final design concept involved both hardware and software components. The hardware included a
                     button attached to the sinus rinse bottle, soldered onto a microcontroller.
                     This board communicated via Bluetooth with the users' phones, enabling data logging, encryption, and
-                    trend visualization on an app and web based dashboard.</p> <span id="dots1"></span><span id="more1" style="display: none;">
+                    trend visualization on an app and web based dashboard.</p> <span id="dots1"></span><span id="more1"
+                    style="display: none;">
                     <p>The logged data was stored in a central database, allowing the app to provide reminders and
                         positive
                         reinforcement to encourage adherence. The data also enabled the creation of a dashboard for
@@ -301,7 +302,7 @@
                         and potential diagnostic markers. The research project contributes to precision diagnostics for
                         bladder cancer patients and lays the groundwork for further investigations into other biological
                         applications and cancer types.</p>
-                
+
                 </span><button onclick="readmore(2)" id="myBtn2">Read more</button>
 
                 <p><b>Project Gallery:</b></p>
@@ -318,7 +319,8 @@
                         <a target="_blank" href="images\bioinfo\kaplan.png">
                             <img src="images\bioinfo\kaplan.png" alt="kaplan">
                         </a>
-                        <div class="desc">A Kaplan-Meir plot of the survival probability of all patients per cluster, and tabulated results of the number of patients alive in increments of 40 months.</div>
+                        <div class="desc">A Kaplan-Meir plot of the survival probability of all patients per cluster,
+                            and tabulated results of the number of patients alive in increments of 40 months.</div>
                     </div>
                 </div>
                 <div class="responsive">
@@ -335,6 +337,40 @@
             </div>
 
 
+            <div class="w3-padding-16 C  Engineering  Medical  Electrical  Microcontroller 2020 School"
+                style="clear: left;">
+                <div class="w3-text-light-black ">
+                    <b>Anti-Covid Belt - CPSC 1491</b>
+                </div>
+                <div class="w3-text-gray">Jan 2021 - Apr 2021</div>
+                <div class="w3-text-gray"><b>Skills: </b> C, Medical
+                    Engineering, Electrical Engineering, Microcontroller</div>
+                <p>The Anti-Covid Belt is an engineering project developed in my time at Langara college with the purpose of providing an additional layer of protection against contracting the
+                    COVID-19 virus. The belt incorporates proximity sensors strategically placed around the user's waist
+                    to offer 360-degree coverage and trigger an alarm when someone breaches their personal space within
+                    a range of 6 feet or approximately 2 meters.</p>
+
+                 <p>  The main components of the Anti-Covid Belt include an Arduino Mega 2550 for processing data and
+                    controlling output, a breadboard for building the electrical circuit, a power bank for supplying
+                    power, ultrasonic sensors for measuring distances, a PIR sensor for detecting motion, a piezo buzzer
+                    for triggering alerts, and an HC-05 Bluetooth module for enabling dual-way communication with the
+                    user and controlling the sensors and buzzer.</p> 
+
+                <p><b>Project Gallery:</b></p>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="images\Covid\belt.jpg">
+                            <img src="images\Covid\belt.jpg" alt="belt">
+                        </a>
+                        <div class="desc">Anti-Covid Belt</div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
             <!-- END PAGE CONTENT -->
         </div>
     </div>
@@ -342,9 +378,9 @@
     <script>
 
         function readmore(num) {
-            var dots = document.getElementById("dots"+num);
-            var moreText = document.getElementById("more"+num);
-            var btnText = document.getElementById("myBtn"+num);
+            var dots = document.getElementById("dots" + num);
+            var moreText = document.getElementById("more" + num);
+            var btnText = document.getElementById("myBtn" + num);
 
             if (dots.style.display === "none") {
                 dots.style.display = "inline";
